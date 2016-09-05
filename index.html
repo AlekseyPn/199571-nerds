@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Nerds</title>
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header container">
@@ -23,37 +25,40 @@
 			<a href="#" class="basket-link">Корзина</a>
 		</div>
 		<section class="page-slider">
+      <input type="radio" class="slider-toggle" name="slider-toggle" id="btn-1">
+      <input type="radio" class="slider-toggle" name="slider-toggle" id="btn-2">
+      <input type="radio" class="slider-toggle" name="slider-toggle" id="btn-3">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
 			<div class="slider-inner">
-				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-1">
-				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-2">
-				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-3">
 				<div class="slides">
-					<h2 class="slides-title">Долго, дорого,
-скрупулезно.</h2>
-					<p class="slides-text">Математически выверенный дизайн
-для вашего сайта или мобильного приложения.</p>
-					<a href="#" class="btn slides-btn">Узнать больше</a>
-					<div class="slides-img"><img src="img/slide-1.png" alt="Слайд" width="338" height="231"></div>
+					<div class="slides-text">
+            <h2 class="slides-title">Долго, дорого,
+  скрупулезно.</h2>
+  					<p class="slides-text">Математически выверенный дизайн
+  для вашего сайта или мобильного приложения.</p>
+  					<a href="#" class="btn slides-btn">Узнать больше</a>
+					</div>
 				</div>
 				<div class="slides">
-					<h2 class="slides-title">Любите ли вы математику,
-как любим ее мы?</h2>
-					<p class="slides-text">Нашим дизайнерам мы удаляем нейроны, ответственные
-за креатив, чтобы дать им возможность все просчитать</p>
-					<a href="" class="btn slides-btn">Узнать больше</a>
-					<div class="slides-img"><img src="img/slide-2.png" alt="Слайд" width="230" height="249"></div>
+					<div class="slides-text">
+            <h2 class="slides-title">Любите ли вы математику,
+  как любим ее мы?</h2>
+  					<p class="slides-text">Нашим дизайнерам мы удаляем нейроны, ответственные
+  за креатив, чтобы дать им возможность все просчитать</p>
+  					<a href="" class="btn slides-btn">Узнать больше</a>
+					</div>
 				</div>
 				<div class="slides">
-					<h2 class="slides-title">Только наркотики,
-только хардкор!</h2>
-					<p class="slides-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-					<a href="" class="btn slides-btn">Узнать больше</a>
-					<div class="slides-img"><img src="img/slide-3.png" alt="Слайд" width="333" height="319"></div>
-				</div>
-				<div class="slider-controls">
-					<label for="btn-1"></label>
-					<label for="btn-2"></label>
-					<label for="btn-3"></label>
+					<div class="slides-text">
+            <h2 class="slides-title">Только наркотики,
+  только хардкор!</h2>
+  					<p class="slides-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+  					<a href="" class="btn slides-btn">Узнать больше</a>
+					</div>
 				</div>
 			</div>
 		</section>
