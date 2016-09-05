@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds</title>
-	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header container">
-		<div class="page-title">			
-			<a href="#" class="page-link">
-				<img src="" alt="">
+		<div class="page-title">
+			<a href="index.html" class="page-link">
+				<img src="img/logo-header.png" alt="Логотип" width="139" height="56">
 			</a>
 		</div>
 		<nav class="page-menu">
@@ -22,7 +22,7 @@
 			<a href="#" class="basket-link">Корзина</a>
 		</div>
 		<div class="catalog-title">
-			<h1>Добро пожаловать в магазин 
+			<h1>Добро пожаловать в магазин
 готовых макетов</h1>
 		</div>
 	</header>
@@ -39,24 +39,186 @@
 						<div class="toggle max-toggle"></div>
 					</div>
 					<div class="price-control">
-						<label for="min"><input type="text" class="min-price" id="min" value="0"></label>
-						<label for="max"><input type="text" class="max-price" id="max" value="5000"></label>
+						<label for="min" class="min-price">от<input type="text" id="min" value="0"></label>
+						<label for="max" class="max-price">до<input type="text" id="max" value="5000"></label>
 					</div>
 				</fieldset>
 				<fieldset class="layout-filter">
+          <legend>Сетка:</legend>
 					<input type="radio" id="radio-1">
-					<label for="radio-1" class="layout-item"></label>
+					<label for="radio-1" class="layout-item">Адаптивная</label>
 					<input type="radio" id="radio-2">
-					<label for="radio-2" class="layout-item"></label>
+					<label for="radio-2" class="layout-item">Фиксированная</label>
 					<input type="radio" id="radio-3">
-					<label for="radio-3" class="layout-item"></label>
+					<label for="radio-3" class="layout-item">Резиновая</label>
 				</fieldset>
 				<fieldset class="features-filter">
-					
+					<legend>Особенности:</legend>
+          <input type="checkbox" name="features-check" id="check-1">
+          <label for="features-check" class="features-item">Слайдер</label>
+          <input type="checkbox" name="features-check" id="check-2">
+          <label for="features-check" class="features-item">Блок преимуществ</label>
+          <input type="checkbox" name="features-check" id="check-3">
+          <label for="features-check" class="features-item">Новости</label>
+          <input type="checkbox" name="features-check" id="check-4">
+          <label for="features-check" class="features-item">Галлерея</label>
+          <input type="checkbox" name="features-check" id="check-5">
+          <label for="features-check" class="features-item">Корзина</label>
 				</fieldset>
+        <button class="btn btn-form" type="submit">Показать</button>
 			</form>
 		</aside>
-		<section class="catalog-content"></section>
+		<section class="catalog-content">
+		  <div class="catalog-sort">
+        <h2 class="sort-title">Сортировать:</h2>
+        <a class="sort-item" href="#">По цене</a>
+        <a class="sort-item" href="#">По типу</a>
+        <a class="sort-item" href="#">По функционалу</a>
+        <div class="arrow-block">
+          <a class="arrow-item arrow-up" href="#" >Вверх</a>
+          <a class="arrow-item arrow-down" href="#" >Вниз</a>
+        </div>
+		  </div>
+      <div class="content-wrapper">
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img1.png" alt="Карточка товара" width="240" height="240"></div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">Aviator</a>
+            </h2>
+            <p class="price-desc">Одностраничный макет
+с авторским дизайном</p>
+            <a href="" class="btn price-btn">8000 Р.</a>
+          </div>
+        </article>
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img2.png" alt="Карточка товара" width="240" height="240">
+          </div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">Sunset</a>
+            </h2>
+            <p class="price-desc">Интернет-магазин
+с личным кабинетом</p>
+            <a href="" class="btn price-btn">10000 Р.</a>
+          </div>
+        </article>
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img3.png" alt="Карточка товара" width="240" height="240">
+          </div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">FORTE</a>
+            </h2>
+            <p class="price-desc">Отличный макет
+для личного блога</p>
+            <a href="" class="btn price-btn">5000 Р.</a>
+          </div>
+        </article>
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img4.png" alt="Карточка товара" width="240" height="240">
+          </div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">Modern Organic
+THAI</a>
+            </h2>
+            <p class="price-desc">Сайт для ресторана
+быстрого питания</p>
+            <a href="" class="btn price-btn">12000 Р.</a>
+          </div>
+        </article>
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img5.png" alt="Карточка товара" width="240" height="240">
+          </div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">AVENUE</a>
+            </h2>
+            <p class="price-desc">Макет для блога
+о путешествиях</p>
+            <a href="" class="btn price-btn">8000 Р.</a>
+          </div>
+        </article>
+        <article class="content-item">
+          <header class="head-item">
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+            <span class="head-circle"></span>
+          </header>
+          <div class="item-img">
+            <img src="img/catalog-img6.png" alt="Карточка товара" width="240" height="240">
+          </div>
+          <div class="item-price">
+            <h2 class="price-title">
+              <a href="" class="title-link">DOVETAIL</a>
+            </h2>
+            <p class="price-desc">Интернет-магазин
+с галереей товаров</p>
+            <a href="" class="btn price-btn">14000 Р.</a>
+          </div>
+        </article>
+      </div>
+		</section>
+    <nav class="catalog-pagination">
+      <a href="#" class="pagination-item">1</a>
+      <a href="#" class="pagination-item">2</a>
+      <a href="#" class="pagination-item">3</a>
+      <a href="#" class="pagination-item">Следующая</a>
+    </nav>
+    <section class="contacts-block">
+      <div class="map-wrapper">
+        <img src="img/content-map.png" alt="Карта" width="1200" height="416">
+      </div>
+      <div class="contact-wrapper">
+        <h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contact-text">191186, Санкт-Петербург,
+  ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact-text"><a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a></p>
+        <a href="feedback.html" class="btn btn-contact">Напишите нам</a>
+      </div>
+    </section>
+    <footer class="page-footer container">
+      <div class="footer-social">
+        <a href="#" class="social social-vk">ВК</a>
+        <a href="#" class="social social-fb">ФБ</a>
+        <a href="#" class="social social-inst">ИНСТ</a>
+      </div>
+      <div class="footer-slogan">
+        <p class="slogan-title">Давайте дружить, это выгодно!</p>
+        <p class="slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
 	</main>
 </body>
-</html>	
+</html>
