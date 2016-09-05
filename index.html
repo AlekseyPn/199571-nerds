@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds</title>
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<header class="page-header container">
+		<h1 class="page-title">
+			NERDS
+			<a href="#" class="page-link">
+				<img src="" alt="">
+			</a>
+		</h1>
+		<nav class="page-menu">
+			<li><a href="">Студия</a></li>
+			<li><a href="">Клиенты</a></li>
+			<li><a href="">Магазин</a></li>
+			<li><a href="">Контакты</a></li>
+		</nav>
+		<div class="page-basket">
+			<a href="#" class="basket-link">Корзина</a>
+		</div>
+		<section class="page-slider">
+			<div class="slider-inner">
+				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-1">
+				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-2">
+				<input type="radio" class="slider-toggle" name="slider-toggle" id="btn-3">
+				<div class="slides">
+					<h2 class="slides-title">Долго, дорого, 
+скрупулезно.</h2>
+					<p class="slides-text">Математически выверенный дизайн 
+для вашего сайта или мобильного приложения.</p>
+					<a href="#" class="btn slides-btn">Узнать больше</a>
+					<div class="slides-img"><img src="" alt=""></div>
+				</div>
+				<div class="slides">
+					<h2 class="slides-title">Любите ли вы математику,
+как любим ее мы?</h2>
+					<p class="slides-text">Нашим дизайнерам мы удаляем нейроны, ответственные
+за креатив, чтобы дать им возможность все просчитать</p>
+					<a href="" class="btn slides-btn">Узнать больше</a>
+					<div class="slides-img"><img src="" alt=""></div>
+				</div>
+				<div class="slides">
+					<h2 class="slides-title">Только наркотики,
+только хардкор!</h2>
+					<p class="slides-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+					<a href="" class="btn slides-btn">Узнать больше</a>
+					<div class="slides-img"><img src="" alt=""></div>
+				</div>
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main class="container">
+		<section class="products-block">
+			<article class="products-item">
+				<div class="item-img">
+					<img src="" alt="">
+				</div>
+				<h3 class="item-title">Веб-сайты</h3>
+				<p class="item-text">Мир никогда не будет прежним после тог как увидит ваш сайт!</p>
+				<a href="" class="btn item-btn">Заказать</a>
+			</article>
+			<article class="products-item">
+				<div class="item-img">
+					<img src="" alt="">
+				</div>
+				<h3 class="item-title">Приложения</h3>
+				<p class="item-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+				<a href="" class="btn item-btn">Заказать</a>
+			</article>
+			<article class="products-item">
+				<div class="item-img">
+					<img src="" alt="">
+				</div>
+				<h3 class="item-title">Презентиции</h3>
+				<p class="item-text">Вы даже не подозреваете насколько вы изумительны!</p>
+				<a href="" class="btn item-btn">Заказать</a>
+			</article>
+		</section>
+		<section class="about-studio-block">
+			<div class="inner-block-left">
+				<h2 class="block-title">Мы - маленкая, но гордая дизайн-студия из Краснодара.</h2>
+				<p class="block-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покаладая рук как роботы.</p>
+				<p class="list-title">Выполняем заказы на разработку:</p>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильные приложения для IOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="inner-block-right">
+				<div class="block-img">
+					<img src="" alt="">
+				</div>
+				<div class="block-years">
+					<span class="years-title">Since 2004</span>
+				</div>
+			</div>
+			<p class="block-title">Как мы работем:</p>
+			<ul>
+				<li>С самоотдачей 146%</li>
+				<li>Соблюдая сроки на 100%</li>
+				<li>По предоплате 50%</li>
+			</ul>
+			<div class="studio-works">
+				<figure>
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+				</figure>
+			</div>
+		</section>				
+	</main>
+	<section class="contacts-block">
+		<div class="map-wrapper">
+			<img src="" alt="">
+		</div>
+		<div class="contact-wrapper">
+			<h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
+			<p class="contact-text">191186, Санкт-Петербург, 
+ул. Б. Конюшенная, д. 19/8</p>
+			<p class="contact-text"><a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a></p>
+			<a href="feedback.html" class="btn btn-contact">Напишите нам</a>
+		</div>
+	</section>
+	<footer class="page-footer container">
+		<div class="footer-social">
+			<a href="#" class="social social-vk">ВК</a>
+			<a href="#" class="social social-fb">ФБ</a>
+			<a href="#" class="social social-inst">ИНСТ</a>
+		</div>
+		<div class="footer-slogan">
+			<p class="slogan-title">Давайте дружить, это выгодно!</p>
+			<p class="slogan-discount">Скидка 10% для друзей из социальных сетей.</p>			
+		</div>
+	</footer>
+</body>
 </html>
