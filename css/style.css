@@ -62,6 +62,15 @@ img {
   height: auto;
 }
 
+.btn {
+  padding: 10px 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
 .page-header {
   margin-bottom: 34px;
 
@@ -114,11 +123,122 @@ img {
   position: relative;
 
   display: block;
-  padding-left: 28px;
+  padding-left: 21px;
   padding-top: 27px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #000;
+}
+
+.page-basket .icon-basket::before {
+  margin-right: 10px;
+}
+
+.page-slider {
+  position: relative;
+
+  margin-top: 34px;
+}
+
+.page-slider input {
+  display: none;
+}
+
+.page-slider h2,
+.page-slider p {
+  margin: 0;
+  padding: 0;
+
+  text-transform: none;
+}
+
+.slider-inner .slides {
+  display: none;
+  padding: 38px 0;
+}
+
+.slides-text {
+  width: 500px;
+  margin-bottom: 36px;
+}
+
+.slides-text .slides-title {
+  margin-bottom: 20px;
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.slides-text .slides-desc {
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+
+.slides-text .slides-btn {
+  display: block;
+  width: 240px;
+
+  text-align: center;
+  background-color: #fb565a;
+  border-radius: 3px;
+}
+
+.slider-inner .slides-1 {
+  background-image: url(../img/slide-1.png);
+  background-repeat: no-repeat;
+  background-position: 90% 17px;
+}
+
+.slider-inner .slides-2 {
+  background-image: url(../img/slide-2.png);
+  background-repeat: no-repeat;
+  background-position: 90% 17px;
+}
+
+.slider-inner .slides-3 {
+  background-image: url(../img/slide-3.png);
+  background-repeat: no-repeat;
+  background-position: 90% 17px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 74px;
+  left:50%;
+
+  margin-left: -70px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 4px;
+  height: 4px;
+  margin: 0 4px;
+
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  box-sizing: content-box;
+}
+
+.slider-toggle1:checked ~ .slider-inner .slides-1 {
+  display: block;
+}
+
+.slider-toggle2:checked ~ .slider-inner .slides-2 {
+  display: block;
+}
+
+.slider-toggle3:checked ~ .slider-inner .slides-3 {
+  display: block;
 }
