@@ -378,7 +378,7 @@ img {
 /*=====About Studio Style=====*/
 .about-studio-block {
   padding: 74px 0 72px;
-    
+
   border-top: 1px solid #eee;
 }
 
@@ -396,7 +396,7 @@ img {
 .inner-block-left .block-title {
 	margin: 0;
   margin-bottom: 20px;
-    
+
   font-weight: 500;
   font-size: 36px;
   line-height: 36px;
@@ -420,10 +420,10 @@ img {
 .inner-block-left li,
 .inner-block-right li {
 	position: relative;
-	
+
 	display: block;
 	padding-left: 35px;
-	
+
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
@@ -436,10 +436,10 @@ img {
 	position: absolute;
 	top: 11px;
 	left: 0;
-	
+
 	width: 25px;
 	height: 2px;
-	background-color: #fb565a; 
+	background-color: #fb565a;
 }
 
 .inner-block-right .block-img {
@@ -454,23 +454,23 @@ img {
 	height: 75px;
 }
 
-.block-years {	
+.block-years {
 	width: 100%;
-	
+
 	text-align: center;
 }
 
-.block-years .years-title {	
+.block-years .years-title {
 	position: relative;
-	
-	display: inline-block;	
+
+	display: inline-block;
 	padding: 0 14px;
-	
+
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 9px;
 	text-transform: uppercase;
-	
+
 	background-color: #fff;
 	z-index: 2;
 }
@@ -480,11 +480,11 @@ img {
 	position: relative;
 	top: -17px;
 	left: 0;
-	
+
 	display: block;
 	width: 240px;
 	height: 2px;
-	
+
 	background-color: #eee;
 	z-index: 1;
 }
@@ -493,13 +493,18 @@ img {
 
 .studio-works {
 	padding: 55px 40px 42px;
+
+  font-size: 0;
+
 	border: 1px solid #eee;
 	border-left: none;
-	border-right: none;	
+	border-right: none;
 }
 
 .studio-works .studio-link {
-	float: left;
+	display: inline-block;
+  vertical-align: middle;
+
 	opacity: 0.2;
 }
 
@@ -518,4 +523,21 @@ img {
 .studio-works .link-3 {
 	width: 209px;
 	height: 90px;
+}
+
+/*=====Style Map Contact Block=====*/
+
+.contacts-block {
+  position: relative;
+}
+
+.contact-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 240px;
+  padding: 30px 20px 0;
+
+  background-color: #fff;
 }
