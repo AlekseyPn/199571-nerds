@@ -271,6 +271,12 @@ img {
   display: block;
 }
 
+.slider-toggle1:checked ~ .slider-controls label[for="btn-1"],
+.slider-toggle2:checked ~ .slider-controls label[for="btn-2"],
+.slider-toggle3:checked ~ .slider-controls label[for="btn-3"]{
+    background-color: #c1c1c1;
+}
+
 /*=====Style Main Content=====*/
 .products-block {
   margin-bottom: 80px;
@@ -367,4 +373,9 @@ img {
 .products-item .btn_yellow:active {
   background-color: #c09b24;
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*=====About Studio Style=====*/
+.about-studio-block {
+    border-top: 1px solid #eee;
 }
