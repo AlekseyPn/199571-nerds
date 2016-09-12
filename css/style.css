@@ -686,7 +686,7 @@ page-menu .active-page:active {
 
 
 .page-footer .footer-slogan {
-  float: left;
+  float: right;
   width: 540px;
   margin-left: 39px;
 }
@@ -968,6 +968,10 @@ page-menu .active-page:active {
   border: none;
 }
 
+.catalog-sort .active-sort:hover {
+  border: none;
+}
+
 .catalog-sort .arrow-block {
   float: right;
 }
@@ -1001,4 +1005,70 @@ page-menu .active-page:active {
 
 .arrow-block .active-arrow:hover {
   color: #00ca74;
+}
+
+/*=====Style Catalog Item=====*/
+.content-wrapper {
+  margin-top: 20px;
+}
+
+
+.content-wrapper .content-item {
+  position: relative;
+
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.content-wrapper .content-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.content-item .head-item {
+  position: relative;
+
+  height: 30px;
+  padding: 9px 12px;
+
+  background-color: #f1f1f1;
+  border-radius: 5px 5px 0 0;
+}
+
+.head-item .head-circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.head-item::before,
+.head-item::after {
+  content: '';
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.head-item::before {
+  top: 9px;
+  left: 30px;
+}
+
+.head-item::after {
+  top: 9px;
+  left: 48px;
+}
+
+
+
+/*=====Class for Script=====*/
+.active-content-item {
+  background-color: #797979;
 }
