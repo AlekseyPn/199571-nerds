@@ -5,34 +5,42 @@
 	<title>Nerds</title>
 	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/symbols-nerds.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header class="page-header container">
-		<div class="page-title">
-			<a href="index.html" class="page-link">
-				<img src="img/logo-header.png" alt="Логотип" width="139" height="56">
-			</a>
-		</div>
-		<nav class="page-menu">
-			<li><a href="">Студия</a></li>
-			<li><a href="">Клиенты</a></li>
-			<li><a href="">Магазин</a></li>
-			<li><a href="">Контакты</a></li>
-		</nav>
-		<div class="page-basket">
-			<a href="#" class="basket-link">Корзина</a>
-		</div>
-		<div class="catalog-title">
-			<h1>Добро пожаловать в магазин
-готовых макетов</h1>
-		</div>
+	<header class="page-header">
+		<div class="container">
+			<div class="nav-wrapper clearfix">
+				<h1 class="page-title">
+					<span class="visually-hidden">NERDS</span>
+					<a href="index.html" class="page-link">
+						<img src="img/logo-header.png" alt="Логотип" width="139" height="56">
+					</a>
+				</h1>
+				<nav class="page-menu">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a class="active-page">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="page-basket">
+					<a href="#" class="basket-link icon-basket">Корзина</a>
+				</div>
+			</div>
+		    <div class="catalog-title">
+			    <h1>Добро пожаловать в магазин
+              готовых макетов</h1>
+		    </div>
+    </div>
 	</header>
 	<main class="container">
 		<aside class="catalog-filter">
 			<form class="filter" action="" method="get">
 				<fieldset class="range-filter">
-					<legend></legend>
+					<legend>Стоимость:</legend>
 					<div class="range-control">
 						<div class="scale">
 							<div class="bar"></div>
@@ -45,27 +53,27 @@
 						<label for="max" class="max-price">до<input type="text" id="max" value="5000"></label>
 					</div>
 				</fieldset>
-				<fieldset class="layout-filter">
+				<fieldset class="grid-filter">
           <legend>Сетка:</legend>
-					<input type="radio" id="radio-1">
-					<label for="radio-1" class="layout-item">Адаптивная</label>
-					<input type="radio" id="radio-2">
-					<label for="radio-2" class="layout-item">Фиксированная</label>
-					<input type="radio" id="radio-3">
-					<label for="radio-3" class="layout-item">Резиновая</label>
+          <input class="radiobtn" name="radio-btn" type="radio" id="radio-1" checked>
+          <label for="radio-1" class="grid-item icon-circle">Адаптивная</label>
+          <input class="radiobtn" name="radio-btn" type="radio" id="radio-2">
+          <label for="radio-2" class="grid-item icon-circle">Фиксированная</label>
+          <input class="radiobtn" name="radio-btn" type="radio" id="radio-3">
+          <label for="radio-3" class="grid-item icon-circle">Резиновая</label>
 				</fieldset>
 				<fieldset class="features-filter">
 					<legend>Особенности:</legend>
-          <input type="checkbox" name="features-check" id="check-1">
-          <label for="features-check" class="features-item">Слайдер</label>
-          <input type="checkbox" name="features-check" id="check-2">
-          <label for="features-check" class="features-item">Блок преимуществ</label>
-          <input type="checkbox" name="features-check" id="check-3">
-          <label for="features-check" class="features-item">Новости</label>
-          <input type="checkbox" name="features-check" id="check-4">
-          <label for="features-check" class="features-item">Галлерея</label>
-          <input type="checkbox" name="features-check" id="check-5">
-          <label for="features-check" class="features-item">Корзина</label>
+          <input class="checkbox" type="checkbox" name="features-check" id="check-1" checked>
+          <label for="check-1" class="features-item icon-check">Слайдер</label>
+          <input class="checkbox" type="checkbox" name="features-check" id="check-2">
+          <label for="check-2" class="features-item icon-check">Блок преимуществ</label>
+          <input class="checkbox" type="checkbox" name="features-check" id="check-3" checked>
+          <label for="check-3" class="features-item icon-check">Новости</label>
+          <input class="checkbox" type="checkbox" name="features-check" id="check-4">
+          <label for="check-4" class="features-item icon-check">Галлерея</label>
+          <input class="checkbox" type="checkbox" name="features-check" id="check-5">
+          <label for="check-5" class="features-item icon-check">Корзина</label>
 				</fieldset>
         <button class="btn btn-form" type="submit">Показать</button>
 			</form>
@@ -101,8 +109,6 @@
         </article>
         <article class="content-item">
           <header class="head-item">
-            <span class="head-circle"></span>
-            <span class="head-circle"></span>
             <span class="head-circle"></span>
           </header>
           <div class="item-img">
