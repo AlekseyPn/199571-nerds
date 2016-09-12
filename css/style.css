@@ -917,3 +917,88 @@ page-menu .active-page:active {
   background-color: #d5d5d5;
   box-shadow:inset 0 3px 0 0 rgba(0, 0, 0, 0.15)
 }
+
+/*=====Catalog Content Styles=====*/
+
+.catalog-content {
+  float: left;
+  width: 560px;
+}
+
+.catalog-content .catalog-sort {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+  font-size: 0;
+  font-weight: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-sort .sort-title {
+  display: inherit;
+  margin: 0;
+  margin-right: 40px;
+
+  font-size: 12px;
+  font-weight: inherit;
+}
+
+.catalog-sort .sort-item {
+  display: inherit;
+  margin-right: 40px;
+
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #00ca74;
+}
+
+.catalog-sort .sort-item:hover {
+  color: rgba(0, 0, 0, 1);
+  border-bottom-style: solid;
+}
+
+.catalog-sort .sort-item:active {
+  border: none;
+}
+
+.catalog-sort .active-sort {
+  color: rgba(0, 0, 0, 1);
+  border: none;
+}
+
+.catalog-sort .arrow-block {
+  float: right;
+}
+
+.arrow-block .arrow-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+
+  font-size: 23px;
+  line-height: 20px;
+  color: #c1c1c1;
+}
+
+.arrow-block .arrow-item:before {
+  width: 11px;
+  margin: 0;
+}
+
+.arrow-block .arrow-item:hover {
+  color: #b5b5b5;
+}
+
+.arrow-block .arrow-item:active {
+  color: #000;
+}
+
+.arrow-block .active-arrow {
+  color: #00ca74;
+}
+
+.arrow-block .active-arrow:hover {
+  color: #00ca74;
+}
