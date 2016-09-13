@@ -1122,6 +1122,7 @@ page-menu .active-page:active {
 
 .item-price .price-btn:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .content-item:nth-child(4) .item-price {
@@ -1174,4 +1175,146 @@ page-menu .active-page:active {
 .catalog-pagination .pagination-active:active {
   background: #fff;
   box-shadow: inset 0 0 0 2px #f1f1f1;
+}
+
+/*=====Modal Content=====*/
+
+.modal-content-contact {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  z-index: 20;
+
+  display: none;
+  width: 630px;
+  padding: 50px 90px 48px 80px;
+  margin-left: -315px;
+
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+
+  width: 41px;
+  height: 41px;
+
+  font-size: 0;
+
+  background: #fb565a;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 7px;
+
+  width: 27px;
+  height: 5px;
+
+  background: #fff;
+}
+
+.modal-content-close::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-form {
+  font-size: 0;
+}
+
+.modal-form p {
+  display: inline-block;
+  width: 220px;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-form p:nth-child(2) {
+  margin-right: 0;
+}
+
+.modal-form label {
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 18px;
+}
+
+.modal-form input {
+  display: block;
+  width: 100%;
+  padding: 8px 14px;
+
+  font-size: 12px;
+  font-weight: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.modal-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 48px;
+
+  font-size: 12px;
+  font-weight: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: 2px solid #d7dcde;
+}
+
+.modal-form textarea:hover {
+  border-color: #a2a9ac;
+}
+
+.modal-form textarea:focus {
+  border-color: #56bffb;
+}
+
+.modal-form .modal-btn {
+  width: 100%;
+
+  background: #fb565a;
+  border: none;
+  outline: none;
+}
+
+.modal-form .modal-btn:hover {
+  background: #d6494d;
+}
+
+.modal-form .modal-btn:active {
+  background: #b63639;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
 }
