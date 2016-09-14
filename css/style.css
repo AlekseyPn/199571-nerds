@@ -1181,7 +1181,7 @@ page-menu .active-page:active {
 
 .modal-content-contact {
   position: fixed;
-  bottom: 100px;
+  bottom: 25%;
   left: 50%;
   z-index: 20;
 
@@ -1317,4 +1317,9 @@ page-menu .active-page:active {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-show,
+.modal-overlay-show {
+  display: block;
 }
